@@ -1,0 +1,7 @@
+easy machine: #Web #Linux
+
+Technologies: Python Flask app, песочница для написания JavaScript кода
+
+Уязвимости: Уязвимая библиотека = RCE, неправильное разграничение sudo и прав доступа к конфигурациям.
+
+Инструменты: публичный exploit на CVE, netcat, hashcat, ssh id_rsa
