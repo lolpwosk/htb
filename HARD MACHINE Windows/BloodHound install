@@ -1,0 +1,35 @@
+apt install docker.io docker-compose
+mkdir -p /opt/bloodhound
+cd /opt/bloodhound
+curl -L https://ghst.ly/getbhce -o docker-compose.yml
+docker-compose up -d
+
+
+Заходим на http://127.0.0.1:8080
+Находим пароль в логах:
+docker-compose logs bloodhound | grep 'Password'
+jY1JlObvpXhllfQKkKO6wgM5Il4sfc4r
+
+Логинимся под admin и этим паролем.
+Дальше меняем этот пароль на свой.
+
+
+Потом указываем в /etc/resolv.conf
+в nameserver айпи адрес контроллера домена
+nxc ldap 192.168.10.200 -u 'Olga' -p 'O-Qq123456' --bloodhound --collection ALL
+
+
+
+
+
+Запустить bloodhound после перезагрузки:
+cd /opt/bloodhound
+docker-compose up -d
+
+
+очистить bloodhound
+cd /opt/bloodhound
+docker-compose down -v
+docker-compose up -d
+но придется снова искать пароль в логах.
+docker-compose logs bloodhound | grep 'Password'
