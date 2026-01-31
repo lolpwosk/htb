@@ -1,0 +1,7 @@
+first medium machine: #Web #Linux
+
+Технологии: HTTP requests, response, архитектура веб приложений, шифрование AES
+
+Уязвимости: Blind Stored XSS, LFI, OS command injection, уязвимые sudo привилегии.
+
+Инструменты: nmap, DevTools, python, curl, hashcat
