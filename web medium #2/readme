@@ -1,0 +1,13 @@
+Очередная medium машина. #Web #Linux.
+
+Технологии, которые встретились: Django, Ajax запросы. 
+
+Уязвимости: SSTI, Django FileBasedCache, Взлом gpg файлов.
+
+Инструменты: nmap, DevTools, curl, bash скрипт для автоматизации, netcat, linpeas, gpg2john + john + rockyou.txt
+
+В этой машине: 
+В первый раз узнал про SSTI. И как в фреймворке Django Template и Context превращаются в это самое SSTI. 
+Написал Bash скрипт для автоматизации.
+В первый раз повышал привилегии через подмену кэш файлов. (Djcache)
+Первый опыт со взломом gpg файлов.
