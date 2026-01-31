@@ -1,0 +1,7 @@
+easy machine: #Web #Linux
+
+Технологии: docker среда, 3DES, cookie + session creds, SQL data bases, утилиты openssl и ln
+
+Уязвимости: не обновленная версия сервиса = публичный эксплоит -> RCE, креды от БД и des key в открытом виде, уязвимые sudo привилегии.
+
+Инструменты: nmap, nc, BASH скрипт
