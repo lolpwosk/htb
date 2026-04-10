@@ -1,7 +1,7 @@
 apt install docker.io docker-compose
 mkdir -p /opt/bloodhound
 cd /opt/bloodhound
-curl -L https://ghst.ly/getbhce -o docker-compose.yml
+curl -L https://ghst.ly/getbhce -o docker-compose.yml (либо лучше найти аналоговый репозиторий)
 docker-compose up -d
 
 
